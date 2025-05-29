@@ -1,0 +1,82 @@
+.start-screen {
+    background-image: url('/Image301.jpg'); /* đảm bảo ảnh nằm trong public/ */
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .fade-in-text {
+    font-size: 2rem;
+    font-weight: bold;
+    opacity: 0;
+    transition: opacity 2s ease-in;
+  }
+  
+  .fade-in-text.visible {
+    opacity: 1;
+  }
+  
+  .animations {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .scale-icon {
+    font-size: 40px;
+    animation: pulse 2s infinite;
+  }
+  
+  @keyframes pulse {
+    0%, 100% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.3);
+    }
+  }
+  
+  .dots {
+    margin-top: 20px;
+    font-size: 30px;
+    display: flex;
+    gap: 10px;
+  }
+  
+  .dot {
+    animation: bounce 1.5s infinite;
+  }
+  
+  .dot1 { animation-delay: 0s; }
+  .dot2 { animation-delay: 0.2s; }
+  .dot3 { animation-delay: 0.4s; }
+  
+  @keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+  }
+  
+  .start-button {
+    margin-top: 40px;
+    padding: 10px 20px;
+    background-color: #6200ea;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .start-button:hover {
+    background-color: #3700b3;
+  }
+  
